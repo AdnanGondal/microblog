@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useContext } from "react";
-import Blog from "../Blog";
+import Blog from "../Blog/Blog";
 import Post from "../Post/Post";
 import { userContext } from "../../App";
 import "./Main.css";
@@ -36,7 +36,7 @@ function Main() {
     <main>
       <div className="blogs-container">
         {user && <Post user={user} update={fetchAllBlogs} />}
-        <h2>Blog Posts</h2>
+        <h2>All Posts</h2>
         {allBlogs && showBlogs(allBlogs)}
       </div>
     </main>

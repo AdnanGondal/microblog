@@ -1,13 +1,12 @@
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 10px;
+header img {
+  width: 200px;
 }
 
-header img {
-  width: 30%;
-  height: auto;
+.site-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 header button {
@@ -48,7 +47,6 @@ header input[type="text"]:hover {
 }
 
 header form {
-  margin-right: 30px;
 }
 
 .welcome-text {
@@ -56,7 +54,7 @@ header form {
   letter-spacing: 2px;
   font-weight: 600 !important;
   background-color: white;
-  color: gray;
+  color: #4f5659;
   padding: 8px 20px;
   margin: 0px 10px;
   text-align: center;
@@ -68,4 +66,13 @@ header form {
   transition: all 0.3s 0s ease-in-out;
   border-radius: 10px;
   border: 2px solid grey;
+}
+
+.textarea {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  resize: both;
+  min-height: 40px;
+  line-height: 20px;
 }

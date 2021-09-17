@@ -1,56 +1,9 @@
-.post-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.post-form label {
-  font-size: 20px;
-  letter-spacing: 2px;
-  font-weight: 600 !important;
-  background-color: white;
-  color: gray;
-  padding: 8px 20px;
-  margin: 0px 10px;
-  text-align: center;
-  display: inline-block !important;
-  text-decoration: none;
-  border: 0px;
-  width: max-content;
-  cursor: pointer;
-  transition: all 0.3s 0s ease-in-out;
-  border-radius: 10px;
-}
-
-.post-form textarea {
-  padding: 10px;
-  width: 80%;
-  font-size: 20px;
+.blog-name {
+  font-size: 24px;
   letter-spacing: 2px;
   font-weight: 600 !important;
   background-color: white;
   color: #4f5659;
-  padding: 8px 20px;
-  margin: 0px 10px;
-  text-align: center;
-  display: inline-block !important;
-  text-decoration: none;
-  border: 0px;
-  cursor: pointer;
-  transition: all 0.3s 0s ease-in-out;
-  border-radius: 10px;
-  border: 2px solid grey;
-  text-align: left;
-}
-
-.post-form button {
-  width: 40%;
-  font-size: 16px;
-  letter-spacing: 2px;
-  font-weight: 600 !important;
-  background-color: grey;
-  color: white;
-  padding: 3px 20px;
   text-align: center;
   display: inline-block !important;
   text-decoration: none;
@@ -59,12 +12,42 @@
   cursor: pointer;
   transition: all 0.3s 0s ease-in-out;
   border-radius: 10px;
-  border: 2px solid grey;
-  margin-top: 10px;
+  margin-right: 10px;
 }
 
-.post-form button:hover {
-  transform: scale(1.04, 1);
-  background-color: grey;
+.blog-date {
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: 200 !important;
+  background-color: white;
+  color: black;
+  text-align: center;
+  display: inline-block !important;
   text-decoration: none;
+  border: 0px;
+  width: max-content;
+  cursor: pointer;
+  transition: all 0.3s 0s ease-in-out;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.post-text-container {
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 600 !important;
+  background-color: white;
+  color: #4f5659;
+  text-align: center;
+  display: inline-block !important;
+  text-decoration: none;
+  border: 0px;
+  cursor: pointer;
+  transition: all 0.3s 0s ease-in-out;
+  text-align: left;
+  width: 80%;
+  padding: 0;
+  width: 50rem;
+  overflow-wrap: break-word;
 }

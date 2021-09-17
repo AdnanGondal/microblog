@@ -1,18 +1,25 @@
 import React from "react";
+import ReactTimeAgo from "react-time-ago";
 
 // Blog Object Contains
 // id
 // message
 // from
 // timestamp
+import "./Blog.css";
 
 function Blog(props) {
   if (props.blog) {
     return (
       <article key={props.blog.id}>
-        <p>User: {props.blog.from} </p>
-        <p>Posted on: {convertTimestamp(props.blog.timestamp)} </p>
-        <p>Post: {props.blog.message} </p>
+        <hr style={{ width: "100%" }} size="3" color="grey" />
+        <div>
+          <span className="blog-name">{props.blog.from} </span>
+          <span className="blog-date">
+            <ReactTimeAgo date={new Date(props.blog.timestamp)} />
+          </span>
+        </div>
+        <div className="post-text-container"> {props.blog.message} </div>
       </article>
     );
   } else

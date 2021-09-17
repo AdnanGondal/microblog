@@ -48,8 +48,10 @@ function Header() {
 
   return (
     <header>
-      <img src={logo}></img>
-      {!user ? showLogin() : showLogout()}
+      <div className="site-header">
+        <img src={logo} alt="company logo"></img>
+        {!user ? showLogin() : showLogout()}
+      </div>
     </header>
   );
 }
