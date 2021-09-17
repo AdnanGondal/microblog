@@ -1,0 +1,10 @@
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.blogs-container {
+  border: 2px solid grey;
+  padding: 15px;
+  border-radius: 10px;
+}

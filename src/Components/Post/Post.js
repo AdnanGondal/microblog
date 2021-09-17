@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Post.css";
 
 function Post(props) {
   const [text, setText] = useState("");
@@ -24,8 +25,8 @@ function Post(props) {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
+    <div className="new-post-container">
+      <form className="post-form" onSubmit={handleSubmit}>
         <label>What are you thinking about?</label>
         <textarea onChange={handleChange} value={text}></textarea>
         <button> Post </button>

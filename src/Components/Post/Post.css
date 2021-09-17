@@ -1,57 +1,10 @@
-header {
+.post-form {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 10px;
 }
 
-header img {
-  width: 30%;
-  height: auto;
-}
-
-header button {
-  font-size: 20px;
-  letter-spacing: 2px;
-  font-weight: 600 !important;
-  background-color: grey;
-  color: white;
-  padding: 8px 20px;
-  text-align: center;
-  display: inline-block !important;
-  text-decoration: none;
-  border: 0px;
-  width: max-content;
-  cursor: pointer;
-  transition: all 0.3s 0s ease-in-out;
-  border-radius: 10px;
-  border: 2px solid grey;
-}
-
-header button:hover {
-  transform: scale(1.04, 1);
-  background-color: grey;
-  text-decoration: none;
-}
-
-header input[type="text"] {
-  padding: 10px;
-  margin-right: 10px;
-  font-size: 16px;
-  border-radius: 10px;
-  width: 10rem;
-}
-
-header input[type="text"]:hover {
-  transform: scale(1.04, 1);
-  text-decoration: none;
-}
-
-header form {
-  margin-right: 30px;
-}
-
-.welcome-text {
+.post-form label {
   font-size: 20px;
   letter-spacing: 2px;
   font-weight: 600 !important;
@@ -67,5 +20,50 @@ header form {
   cursor: pointer;
   transition: all 0.3s 0s ease-in-out;
   border-radius: 10px;
+}
+
+.post-form textarea {
+  padding: 10px;
+  width: 80%;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 600 !important;
+  background-color: white;
+  color: gray;
+  padding: 8px 20px;
+  margin: 0px 10px;
+  text-align: center;
+  display: inline-block !important;
+  text-decoration: none;
+  border: 0px;
+  cursor: pointer;
+  transition: all 0.3s 0s ease-in-out;
+  border-radius: 10px;
   border: 2px solid grey;
+}
+
+.post-form button {
+  width: 40%;
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: 600 !important;
+  background-color: grey;
+  color: white;
+  padding: 3px 20px;
+  text-align: center;
+  display: inline-block !important;
+  text-decoration: none;
+  border: 0px;
+  width: max-content;
+  cursor: pointer;
+  transition: all 0.3s 0s ease-in-out;
+  border-radius: 10px;
+  border: 2px solid grey;
+  margin-top: 10px;
+}
+
+.post-form button:hover {
+  transform: scale(1.04, 1);
+  background-color: grey;
+  text-decoration: none;
 }

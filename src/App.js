@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import Header from "./Components/Header/Header";
-import Main from "./Components/Main";
+import Main from "./Components/Main/Main";
 import React from "react";
 
 export const userContext = React.createContext({
