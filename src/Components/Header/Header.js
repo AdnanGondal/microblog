@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
-import { userContext } from "../App";
-import { useForm } from "react-hook-form";
+import { userContext } from "../../App";
+import "./Header.css";
+import logo from "./logo.png";
 
 function Header() {
   const { user, setUser } = useContext(userContext);
@@ -39,7 +40,7 @@ function Header() {
   function showLogout() {
     return (
       <form onSubmit={logoutHandler}>
-        <label>Welcome {user}</label>
+        <label className="welcome-text">Welcome {user}</label>
         <button>Log Out</button>
       </form>
     );
@@ -47,9 +48,8 @@ function Header() {
 
   return (
     <header>
-      <h1>MicroBlog</h1>
+      <img src={logo}></img>
       {!user ? showLogin() : showLogout()}
-      <h3> Welcome {user}</h3>
     </header>
   );
 }
