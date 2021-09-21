@@ -1,6 +1,6 @@
 # microblog
 
-<img width="400" alt="Screenshot 2021-09-21 at 17 40 33" src="https://user-images.githubusercontent.com/43793942/134211781-c61e6e4a-3635-41e2-b622-bf71a2b19ef2.png">
+<img width="600" alt="Screenshot 2021-09-21 at 17 40 33" src="https://user-images.githubusercontent.com/43793942/134211781-c61e6e4a-3635-41e2-b622-bf71a2b19ef2.png">
 
 ## About
 
